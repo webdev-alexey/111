@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5vw;
+  color: #fff;
+}
+
+h2 {
+  font-size: 4vw;
+  color: #000;
+}
+
+.animate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.animate div {
+  --size: 30px;
+  position: absolute;
+  bottom: -150px;
+  left: 8%;
+  width: var(--size);
+  height: var(--size);
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+}
+
+.animate div:nth-child(2) {
+  --size: 150px;
+  left: 20%;
+  animation-duration: 10s;
+}
+
+.animate div:nth-child(3) {
+  --size: 50px;
+  left: 19%;
+  animation-duration: 24s;
+  animation-delay: 2s;
+}
+
+.animate div:nth-child(4) {
+  --size: 100px;
+  left: 35%;
+  animation-duration: 19s;
+  animation-delay: 4s;
+}
+
+.animate div:nth-child(5) {
+  --size: 30px;
+  left: 40%;
+  animation-duration: 17s;
+}
+
+.animate div:nth-child(6) {
+  --size: 70px;
+  left: 50%;
+  animation-duration: 22s;
+  animation-delay: 3s;
+}
+
+.animate div:nth-child(7) {
+  --size: 150px;
+  left: 50%;
+  animation-duration: 25s;
+  animation-delay: 1s;
+}
+
+.animate div:nth-child(8) {
+  --size: 30px;
+  left: 60%;
+  animation-duration: 18s;
+  animation-delay: 5s;
+}
+
+.animate div:nth-child(9) {
+  --size: 60px;
+  left: 70%;
+  animation-duration: 15s;
+}
+
+.animate div:nth-child(10) {
+  --size: 150px;
+  left: 80%;
+  animation-duration: 23s;
+  animation-delay: 2s;
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(0) rotate(0deg);
+    border-radius: 0;
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-130vh) rotate(720deg);
+    border-radius: 50%;
+    opacity: 0;
+  }
+}
